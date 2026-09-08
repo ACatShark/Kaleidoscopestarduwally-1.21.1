@@ -18,6 +18,11 @@ sourceSets.main.resources {
     exclude("src/generated/**/.cache")
 }
 
+// Optional local Maven repository, used only when net.neoforged:minecraft-dependencies was
+// installed into ~/.m2 locally (it cannot always be resolved from the remote repos).
+// Override with -Plocal_maven_repo=<path>; disable with -Plocal_maven_repo= (empty).
+def localMavenRepoDir = file((project.findProperty('local_maven_repo') ?: new File(System.getProperty('user.home'), '.m2/repository').absolutePath) as String)
+
 repositories {
     // Prefer locally cached artifacts (e.g. minecraft-dependencies installed into ~/.m2).
     mavenLocal()
@@ -25,18 +30,21 @@ repositories {
     // exclusiveContent points it at releases (404) and the forgecdn mirror rewrites
     // mojang-meta back to releases. Resolve ONLY this module from the local Maven repo
     // (where it was installed), enabling gradleMetadata so the .module file is read.
-    exclusiveContent {
-        forRepository {
-            maven {
-                url = "file:///C:/Users/17046/.m2/repository"
-                metadataSources {
-                    gradleMetadata()
-                    mavenPom()
+    // Skipped automatically when that directory does not exist (e.g. on CI).
+    if (localMavenRepoDir.directory) {
+        exclusiveContent {
+            forRepository {
+                maven {
+                    url = localMavenRepoDir.toURI().toString()
+                    metadataSources {
+                        gradleMetadata()
+                        mavenPom()
+                    }
                 }
             }
-        }
-        filter {
-            includeModule("net.neoforged", "minecraft-dependencies")
+            filter {
+                includeModule("net.neoforged", "minecraft-dependencies")
+            }
         }
     }
     maven { url = "https://maven.neoforged.net/releases/" }
