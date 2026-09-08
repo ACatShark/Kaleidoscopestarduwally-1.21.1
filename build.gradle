@@ -83,6 +83,10 @@ neoForge {
         client {
             client()
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+            // 存档 / 配置 / 日志所在目录（已加入 .gitignore）
+            gameDirectory = file('run')
+            // 运行时内存，按需调整
+            jvmArguments.addAll '-Xmx4G', '-Xms1G'
         }
 
         server {
