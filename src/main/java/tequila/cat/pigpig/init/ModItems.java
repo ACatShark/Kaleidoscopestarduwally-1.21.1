@@ -1,11 +1,9 @@
 package tequila.cat.pigpig.init;
 
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -43,18 +41,6 @@ public final class ModItems {
             () -> new ItemNameBlockItem(ModBlocks.KALE_CROP.get(), new Item.Properties()));
     public static final DeferredItem<Item> KALE = ITEMS.register("kale",
             () -> new Item(new Item.Properties().food(KALE_FOOD)));
-
-    public static void addCreativeTabEntries(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(GARLIC.get());
-            event.accept(CAULIFLOWER.get());
-            event.accept(KALE.get());
-        } else if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(GARLIC_CLOVE.get());
-            event.accept(CAULIFLOWER_SEEDS.get());
-            event.accept(KALE_SEEDS.get());
-        }
-    }
 
     private ModItems() {
     }
