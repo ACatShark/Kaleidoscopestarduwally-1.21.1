@@ -16,7 +16,7 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "kaleidoscopestarduwally:cauliflower_crop",
+                  "block": "kaleidoscope_starduwally:cauliflower_crop",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "age": "4"
@@ -33,11 +33,11 @@
                   }
                 }
               ],
-              "name": "kaleidoscopestarduwally:cauliflower_seeds"
+              "name": "kaleidoscope_starduwally:cauliflower_seeds"
             },
             {
               "type": "minecraft:item",
-              "name": "kaleidoscopestarduwally:cauliflower_seeds"
+              "name": "kaleidoscope_starduwally:cauliflower_seeds"
             }
           ]
         }
@@ -48,7 +48,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "kaleidoscopestarduwally:cauliflower_crop",
+          "block": "kaleidoscope_starduwally:cauliflower_crop",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "4"
@@ -58,7 +58,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kaleidoscopestarduwally:cauliflower"
+          "name": "kaleidoscope_starduwally:cauliflower"
         }
       ],
       "rolls": 1.0

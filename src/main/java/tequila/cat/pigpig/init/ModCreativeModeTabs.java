@@ -31,6 +31,16 @@ public final class ModCreativeModeTabs {
                         output.accept(ModItems.CAULIFLOWER_SEEDS.get());
                         output.accept(ModItems.KALE.get());
                         output.accept(ModItems.KALE_SEEDS.get());
+                        // 新作物
+                        output.accept(ModItems.PARSNIP.get());
+                        output.accept(ModItems.RHUBARB.get());
+                        output.accept(ModItems.RHUBARB_SEEDS.get());
+                        output.accept(ModItems.MELON_SLICE.get());
+                        output.accept(ModItems.MELON_SEEDS.get());
+                        output.accept(ModItems.AMARANTH.get());
+                        output.accept(ModItems.AMARANTH_SEEDS.get());
+                        output.accept(ModItems.FROST_MELON.get());
+                        output.accept(ModItems.FROST_MELON_SEEDS.get());
                     })
                     .build());
 

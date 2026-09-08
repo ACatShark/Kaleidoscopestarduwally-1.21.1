@@ -16,7 +16,7 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "kaleidoscopestarduwally:garlic_crop",
+                  "block": "kaleidoscope_starduwally:garlic_crop",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "age": "3"
@@ -33,11 +33,11 @@
                   }
                 }
               ],
-              "name": "kaleidoscopestarduwally:garlic_clove"
+              "name": "kaleidoscope_starduwally:garlic_clove"
             },
             {
               "type": "minecraft:item",
-              "name": "kaleidoscopestarduwally:garlic_clove"
+              "name": "kaleidoscope_starduwally:garlic_clove"
             }
           ]
         }
@@ -48,7 +48,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "kaleidoscopestarduwally:garlic_crop",
+          "block": "kaleidoscope_starduwally:garlic_crop",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "3"
@@ -58,7 +58,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kaleidoscopestarduwally:garlic"
+          "name": "kaleidoscope_starduwally:garlic"
         }
       ],
       "rolls": 1.0

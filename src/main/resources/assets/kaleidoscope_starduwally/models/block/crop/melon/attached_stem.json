@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "kaleidoscope_starduwally:block/crop/melon/attached_stem"
+  }
+}

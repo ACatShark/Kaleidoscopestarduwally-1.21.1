@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/crop",
   "textures": {
-    "crop": "kaleidoscopestarduwally:block/crop/cauliflower/stage2"
+    "crop": "kaleidoscope_starduwally:block/crop/cauliflower/stage2"
   }
 }

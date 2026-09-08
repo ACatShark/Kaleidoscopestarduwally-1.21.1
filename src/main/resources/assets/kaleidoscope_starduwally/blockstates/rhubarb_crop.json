@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "kaleidoscope_starduwally:block/crop/rhubarb/stage0"
+    },
+    "age=1": {
+      "model": "kaleidoscope_starduwally:block/crop/rhubarb/stage1"
+    },
+    "age=2": {
+      "model": "kaleidoscope_starduwally:block/crop/rhubarb/stage2"
+    },
+    "age=3": {
+      "model": "kaleidoscope_starduwally:block/crop/rhubarb/stage3"
+    },
+    "age=4": {
+      "model": "kaleidoscope_starduwally:block/crop/rhubarb/stage4"
+    }
+  }
+}

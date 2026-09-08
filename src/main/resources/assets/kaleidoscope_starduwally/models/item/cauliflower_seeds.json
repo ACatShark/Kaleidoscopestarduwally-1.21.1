@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kaleidoscopestarduwally:item/cauliflower_seeds"
+    "layer0": "kaleidoscope_starduwally:item/cauliflower_seeds"
   }
 }

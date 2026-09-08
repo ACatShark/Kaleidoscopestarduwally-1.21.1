@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kaleidoscopestarduwally:item/garlic_clove"
+    "layer0": "kaleidoscope_starduwally:item/garlic_clove"
   }
 }

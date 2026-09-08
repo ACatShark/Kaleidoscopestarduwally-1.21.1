@@ -16,7 +16,7 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "kaleidoscopestarduwally:kale_crop",
+                  "block": "kaleidoscope_starduwally:kale_crop",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "age": "3"
@@ -33,11 +33,11 @@
                   }
                 }
               ],
-              "name": "kaleidoscopestarduwally:kale_seeds"
+              "name": "kaleidoscope_starduwally:kale_seeds"
             },
             {
               "type": "minecraft:item",
-              "name": "kaleidoscopestarduwally:kale_seeds"
+              "name": "kaleidoscope_starduwally:kale_seeds"
             }
           ]
         }
@@ -48,7 +48,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "kaleidoscopestarduwally:kale_crop",
+          "block": "kaleidoscope_starduwally:kale_crop",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "3"
@@ -58,7 +58,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kaleidoscopestarduwally:kale"
+          "name": "kaleidoscope_starduwally:kale"
         }
       ],
       "rolls": 1.0

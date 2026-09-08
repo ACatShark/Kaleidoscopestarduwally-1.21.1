@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "kaleidoscope_starduwally:block/crop/frost_melon/stage3"
+  }
+}

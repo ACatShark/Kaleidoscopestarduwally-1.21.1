@@ -82,8 +82,10 @@ neoForge {
     runs {
         client {
             client()
+            // IDE 运行配置显示的名字（默认是首字母大写的 run 名，即 "Client"）
+            ideName = 'runClient'
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
-            // 存档 / 配置 / 日志所在目录（已加入 .gitignore）
+            // 游戏目录，插件默认值即为项目下的 run/
             gameDirectory = file('run')
             // 运行时内存，按需调整
             jvmArguments.addAll '-Xmx4G', '-Xms1G'
