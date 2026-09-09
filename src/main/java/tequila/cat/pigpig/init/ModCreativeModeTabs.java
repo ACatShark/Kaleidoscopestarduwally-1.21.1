@@ -21,8 +21,6 @@ public final class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModItems.CAULIFLOWER.get()))
                     .title(Component.translatable("itemGroup.kaleidoscope_starduwally"))
                     .displayItems((parameters, output) -> {
-                        output.accept(ModItems.GARLIC.get());
-                        output.accept(ModItems.GARLIC_CLOVE.get());
                         output.accept(ModItems.CAULIFLOWER.get());
                         output.accept(ModItems.CAULIFLOWER_SEEDS.get());
                         output.accept(ModItems.PARSNIP.get());

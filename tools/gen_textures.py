@@ -287,8 +287,6 @@ def main():
     # 语言文件
     zh = {
         "itemGroup.kaleidoscope_starduwally": "森罗物语：星灵之梦",
-        "item.kaleidoscope_starduwally.garlic": "蒜",
-        "item.kaleidoscope_starduwally.garlic_clove": "蒜瓣",
         "item.kaleidoscope_starduwally.cauliflower": "花椰菜",
         "item.kaleidoscope_starduwally.cauliflower_seeds": "花椰菜种子",
         "item.kaleidoscope_starduwally.parsnip": "防风草",
@@ -304,8 +302,6 @@ def main():
     }
     en = {
         "itemGroup.kaleidoscope_starduwally": "Kaleidoscope Starduwally",
-        "item.kaleidoscope_starduwally.garlic": "Garlic",
-        "item.kaleidoscope_starduwally.garlic_clove": "Garlic Clove",
         "item.kaleidoscope_starduwally.cauliflower": "Cauliflower",
         "item.kaleidoscope_starduwally.cauliflower_seeds": "Cauliflower Seeds",
         "item.kaleidoscope_starduwally.parsnip": "Parsnip",

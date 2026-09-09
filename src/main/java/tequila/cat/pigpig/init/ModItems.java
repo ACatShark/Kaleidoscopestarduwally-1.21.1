@@ -12,16 +12,6 @@ import tequila.cat.pigpig.KaleidoscopeStarduwally;
 public final class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KaleidoscopeStarduwally.MODID);
 
-    // Garlic: clove is the seed, garlic is the harvest.
-    private static final FoodProperties GARLIC_FOOD = new FoodProperties.Builder()
-            .nutrition(2)
-            .saturationModifier(0.25F)
-            .build();
-    public static final DeferredItem<ItemNameBlockItem> GARLIC_CLOVE = ITEMS.register("garlic_clove",
-            () -> new ItemNameBlockItem(ModBlocks.GARLIC_CROP.get(), new Item.Properties()));
-    public static final DeferredItem<Item> GARLIC = ITEMS.register("garlic",
-            () -> new Item(new Item.Properties().food(GARLIC_FOOD)));
-
     // Cauliflower: seeds + harvest.
     private static final FoodProperties CAULIFLOWER_FOOD = new FoodProperties.Builder()
             .nutrition(2)

@@ -29,8 +29,6 @@ public final class ModBlocks {
     private static final ResourceKey<Item> MELON_SEEDS_KEY = ResourceKey.create(Registries.ITEM,
             ResourceLocation.fromNamespaceAndPath(KaleidoscopeStarduwally.MODID, "melon_seeds"));
 
-    public static final DeferredBlock<ModCropBlock> GARLIC_CROP =
-            BLOCKS.register("garlic_crop", () -> new ModCropBlock(3, ModItems.GARLIC_CLOVE.get(), cropProperties()));
     public static final DeferredBlock<ModCropBlock> CAULIFLOWER_CROP =
             BLOCKS.register("cauliflower_crop", () -> new ModCropBlock(4, ModItems.CAULIFLOWER_SEEDS.get(), cropProperties()));
     public static final DeferredBlock<ModCropBlock> PARSNIP_CROP =
