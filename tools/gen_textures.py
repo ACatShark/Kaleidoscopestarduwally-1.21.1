@@ -146,7 +146,7 @@ def draw_attached_tex(c):
 
 # ---------------- JSON 辅助 ----------------
 def crop_blockstate(name, max_age):
-    variants = {f"age={a}": {"model": f"{MODID}:block/crop/{name}/stage{a}"} for a in range(0, max_age + 1)}
+    variants = {f"age={a}": {"model": f"{MODID}:block/crop/{name}/stage{min(a, max_age)}"} for a in range(0, 8)}
     return {"variants": variants}
 
 def crop_stage_model(name, a):
@@ -291,8 +291,6 @@ def main():
         "item.kaleidoscope_starduwally.garlic_clove": "蒜瓣",
         "item.kaleidoscope_starduwally.cauliflower": "花椰菜",
         "item.kaleidoscope_starduwally.cauliflower_seeds": "花椰菜种子",
-        "item.kaleidoscope_starduwally.kale": "甘蓝",
-        "item.kaleidoscope_starduwally.kale_seeds": "甘蓝种子",
         "item.kaleidoscope_starduwally.parsnip": "防风草",
         "item.kaleidoscope_starduwally.rhubarb": "大黄",
         "item.kaleidoscope_starduwally.rhubarb_seeds": "大黄种子",
@@ -310,8 +308,6 @@ def main():
         "item.kaleidoscope_starduwally.garlic_clove": "Garlic Clove",
         "item.kaleidoscope_starduwally.cauliflower": "Cauliflower",
         "item.kaleidoscope_starduwally.cauliflower_seeds": "Cauliflower Seeds",
-        "item.kaleidoscope_starduwally.kale": "Kale",
-        "item.kaleidoscope_starduwally.kale_seeds": "Kale Seeds",
         "item.kaleidoscope_starduwally.parsnip": "Parsnip",
         "item.kaleidoscope_starduwally.rhubarb": "Rhubarb",
         "item.kaleidoscope_starduwally.rhubarb_seeds": "Rhubarb Seeds",

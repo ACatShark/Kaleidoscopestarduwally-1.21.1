@@ -15,10 +15,6 @@ public final class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, KaleidoscopeStarduwally.MODID);
 
-    /**
-     * NeoForge 每页最多放 10 个标签页，前 5 个在上排。这里排在 REDSTONE_BLOCKS 之前，
-     * 使本标签页落在第一页上排的末位，即创造模式物品栏的右上角。
-     */
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STARDUWALLY_TAB =
             CREATIVE_MODE_TABS.register("starduwally_tab", () -> CreativeModeTab.builder()
                     .withTabsBefore(CreativeModeTabs.REDSTONE_BLOCKS)
@@ -29,9 +25,6 @@ public final class ModCreativeModeTabs {
                         output.accept(ModItems.GARLIC_CLOVE.get());
                         output.accept(ModItems.CAULIFLOWER.get());
                         output.accept(ModItems.CAULIFLOWER_SEEDS.get());
-                        output.accept(ModItems.KALE.get());
-                        output.accept(ModItems.KALE_SEEDS.get());
-                        // 新作物
                         output.accept(ModItems.PARSNIP.get());
                         output.accept(ModItems.RHUBARB.get());
                         output.accept(ModItems.RHUBARB_SEEDS.get());

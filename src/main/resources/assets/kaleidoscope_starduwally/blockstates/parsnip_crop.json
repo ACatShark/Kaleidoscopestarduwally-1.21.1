@@ -11,6 +11,18 @@
     },
     "age=3": {
       "model": "kaleidoscope_starduwally:block/crop/parsnip/stage3"
+    },
+    "age=4": {
+      "model": "kaleidoscope_starduwally:block/crop/parsnip/stage3"
+    },
+    "age=5": {
+      "model": "kaleidoscope_starduwally:block/crop/parsnip/stage3"
+    },
+    "age=6": {
+      "model": "kaleidoscope_starduwally:block/crop/parsnip/stage3"
+    },
+    "age=7": {
+      "model": "kaleidoscope_starduwally:block/crop/parsnip/stage3"
     }
   }
 }
