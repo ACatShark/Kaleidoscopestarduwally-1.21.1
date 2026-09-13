@@ -18,7 +18,7 @@ public final class ModCreativeModeTabs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STARDUWALLY_TAB =
             CREATIVE_MODE_TABS.register("starduwally_tab", () -> CreativeModeTab.builder()
                     .withTabsBefore(CreativeModeTabs.REDSTONE_BLOCKS)
-                    .icon(() -> new ItemStack(ModItems.CAULIFLOWER.get()))
+                    .icon(() -> new ItemStack(ModItems.ANCIENT_FRUIT.get()))
                     .title(Component.translatable("itemGroup.kaleidoscope_starduwally"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.CAULIFLOWER.get());
@@ -26,12 +26,27 @@ public final class ModCreativeModeTabs {
                         output.accept(ModItems.PARSNIP.get());
                         output.accept(ModItems.RHUBARB.get());
                         output.accept(ModItems.RHUBARB_SEEDS.get());
-                        output.accept(ModItems.MELON_SLICE.get());
-                        output.accept(ModItems.MELON_SEEDS.get());
                         output.accept(ModItems.AMARANTH.get());
                         output.accept(ModItems.AMARANTH_SEEDS.get());
                         output.accept(ModItems.FROST_MELON.get());
                         output.accept(ModItems.FROST_MELON_SEEDS.get());
+                        output.accept(ModItems.LEEK.get());
+                        output.accept(ModItems.ANCIENT_FRUIT.get());
+                        output.accept(ModItems.ANCIENT_FRUIT_SEEDS.get());
+                        output.accept(ModItems.HOPS.get());
+                        output.accept(ModItems.HOPS_SEEDS.get());
+                        // 加工食品
+                        output.accept(ModItems.RHUBARB_JAM.get());
+                        output.accept(ModItems.ANCIENT_FRUIT_PLATTER.get());
+                        // 饲料
+                        output.accept(ModItems.LIVESTOCK_FEED.get());
+                        output.accept(ModItems.POULTRY_FEED.get());
+                        output.accept(ModItems.PREMIUM_FEED.get());
+                        // 契约
+                        output.accept(ModItems.SALE_CONTRACT.get());
+                        output.accept(ModItems.RELEASE_CONTRACT.get());
+                        // 交易站方块
+                        output.accept(ModItems.SHIPPING_BIN.get());
                     })
                     .build());
 
